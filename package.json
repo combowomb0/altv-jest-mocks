@@ -1,0 +1,20 @@
+{
+  "name": "altv-jest-mocks",
+  "version": "0.0.1",
+  "repository": "https://github.com/combowomb0/altv-jest-mocks.git",
+  "author": "combowomb0",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "test": "jest --colors"
+  },
+  "devDependencies": {
+    "@altv/types-client": "^1.5.6",
+    "@altv/types-natives": "^1.3.0",
+    "@altv/types-server": "^1.7.6",
+    "@types/jest": "^26.0.23",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.6",
+    "typescript": "^4.2.4"
+  }
+}
