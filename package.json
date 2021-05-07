@@ -1,12 +1,36 @@
 {
   "name": "altv-jest-mocks",
   "version": "0.0.1",
-  "repository": "https://github.com/combowomb0/altv-jest-mocks.git",
-  "author": "combowomb0",
+  "description": "Jest mocks for alt:V modules and natives",
+  "keywords": [
+    "altv",
+    "jest",
+    "mock"
+  ],
+  "homepage": "https://github.com/combowomb0/altv-jest-mocks#readme",
+  "bugs": {
+    "url": "https://github.com/combowomb0/altv-jest-mocks/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/combowomb0/altv-jest-mocks.git"
+  },
   "license": "MIT",
-  "type": "module",
+  "author": "combowomb0",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "test": "jest --colors"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "alt-client": "<rootDir>/lib/mocks/alt-client.js",
+      "alt-server": "<rootDir>/lib/mocks/alt-server.js",
+      "natives": "<rootDir>/lib/mocks/natives.js"
+    },
+    "preset": "ts-jest"
   },
   "devDependencies": {
     "@altv/types-client": "^1.5.6",
