@@ -1,6 +1,6 @@
 {
   "name": "altv-jest-mocks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Jest mocks for alt:V modules and natives",
   "keywords": [
     "altv",
