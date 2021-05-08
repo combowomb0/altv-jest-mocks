@@ -1,10 +1,10 @@
 # Installation
-```
+```c
+// with yarn
 yarn add -D altv-jest-mocks
-```
-or
-```
-npm i --save-dev altv-jest-mocks
+
+// with npm
+npm i -D altv-jest-mocks
 ```
 
 You need to setup a [manual Jest mock](https://facebook.github.io/jest/docs/en/manual-mocks.html) *(recommended)*:
