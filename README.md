@@ -7,8 +7,8 @@ or
 npm i --save-dev altv-jest-mocks
 ```
 
-Next you need to setup a [manual Jest mock](https://facebook.github.io/jest/docs/en/manual-mocks.html) *(recommended)*:
-* create `__mocks__` directory in your project root
+You need to setup a [manual Jest mock](https://facebook.github.io/jest/docs/en/manual-mocks.html) *(recommended)*:
+* create `__mocks__` directory in your project **root**
 * create a file `alt-server.js` inside the `__mocks__` folder
 * create a manual jest mock
 
@@ -19,6 +19,18 @@ module.exports = mockServer;
 ```
 
 *the same for another alt:V modules/natives*
+
+```javascript
+// ./__mocks__/alt-client.js
+const { mockClient } = require('altv-jest-mocks');
+module.exports = mockClient;
+```
+
+```javascript
+// ./__mocks__/natives.js
+const { mockNatives } = require('altv-jest-mocks');
+module.exports = mockNatives;
+```
 
 **OR** you can specify the direct path to mocks in your `jest.config.js` *(not recommended)*:
 
