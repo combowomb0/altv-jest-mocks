@@ -22,9 +22,10 @@
     "lib"
   ],
   "scripts": {
-    "test": "jest --colors"
+    "test": "jest --colors --verbose"
   },
   "jest": {
+    "testPathIgnorePatterns": ["src"],
     "moduleNameMapper": {
       "alt-client": "<rootDir>/lib/mocks/alt-client.js",
       "alt-server": "<rootDir>/lib/mocks/alt-server.js",
