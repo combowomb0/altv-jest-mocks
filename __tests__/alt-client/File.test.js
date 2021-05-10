@@ -1,16 +1,16 @@
-const { File } = require("../../lib/mocks/alt-client");
+const { File } = require('../../lib/mocks/alt-client');
 
 let file;
 
-describe("File", () => {
+describe('File', () => {
   beforeEach(() => {
     file = new File();
   });
-  test("should exists()", () => {
+  test('should exists()', () => {
     expect(file.exists()).toBe(false);
   });
 
-  test("should read", () => {
-    expect(file.read()).toBe("");
+  test('should read', () => {
+    expect(file.read()).toBe('');
   });
 });

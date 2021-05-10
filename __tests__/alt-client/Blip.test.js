@@ -1,17 +1,17 @@
-const { Blip, RGBA, Vector2 } = require("../../lib/mocks/alt-client");
+const { Blip, RGBA, Vector2 } = require('../../lib/mocks/alt-client');
 
 let blip;
 
 describe('Blip', () => {
   beforeEach(() => {
     blip = new Blip();
-  })
+  });
 
   test('should have properties', () => {
     expect(blip.scale).toBe(0);
     expect(blip.shrinked).toBe(false);
     expect(blip.category).toBe(0);
-    expect(blip.gxtName).toBe("");
+    expect(blip.gxtName).toBe('');
     expect(blip.tickVisible).toBe(false);
     expect(blip.number).toBe(0);
     expect(blip.flashInterval).toBe(0);
@@ -21,7 +21,7 @@ describe('Blip', () => {
     expect(blip.flashesAlternate).toBe(false);
     expect(blip.highDetail).toBe(false);
     expect(blip.secondaryColor).toBe(0);
-    expect(blip.name).toBe("");
+    expect(blip.name).toBe('');
     expect(blip.headingIndicatorVisible).toBe(false);
     expect(blip.asMissionCreator).toBe(false);
     expect(blip.routeColor).toBeInstanceOf(RGBA);
@@ -39,9 +39,9 @@ describe('Blip', () => {
     expect(blip.display).toBe(0);
     expect(blip.friendIndicatorVisible).toBe(false);
     expect(blip.alpha).toBe(0);
-  })
+  });
 
   test('should fade', () => {
     expect(blip.fade()).toBeUndefined();
-  })
-})
+  });
+});

@@ -1,12 +1,12 @@
-const { Player, Vector3, Entity } = require("../../lib/mocks/alt-client");
+const { Player, Vector3, Entity } = require('../../lib/mocks/alt-client');
 
 let player;
 
 describe('Player', () => {
   beforeEach(() => {
     player = new Player();
-  })
-  
+  });
+
   test('should have properties', () => {
     expect(player.micLevel).toBe(0);
     expect(player.flashlightActive).toBe(false);
@@ -31,13 +31,13 @@ describe('Player', () => {
     expect(player.spatialVolume).toBe(0);
     expect(player.local).toBe(player);
     expect(player.entityAimingAt).toBeInstanceOf(Entity);
-  })
+  });
 
   test('should getByID', () => {
     expect(player.getByID()).toBe(player);
-  })
+  });
 
   test('should getByScriptID', () => {
     expect(player.getByScriptID()).toBe(player);
-  })
-})
+  });
+});

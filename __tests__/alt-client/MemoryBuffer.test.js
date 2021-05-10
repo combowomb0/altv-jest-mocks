@@ -1,59 +1,59 @@
-const { MemoryBuffer } = require("../../lib/mocks/alt-client");
+const { MemoryBuffer } = require('../../lib/mocks/alt-client');
 
 let mbuffer;
 
-describe("MemoryBuffer", () => {
+describe('MemoryBuffer', () => {
   beforeEach(() => {
     mbuffer = new MemoryBuffer();
-  })
-  
-  test("should free", () => {
+  });
+
+  test('should free', () => {
     expect(mbuffer.free()).toBe(false);
   });
 
-  test("should float", () => {
+  test('should float', () => {
     expect(mbuffer.float()).toBe(0);
   });
-  test("should double", () => {
+  test('should double', () => {
     expect(mbuffer.double()).toBe(0);
   });
 
-  test("should ubyte", () => {
+  test('should ubyte', () => {
     expect(mbuffer.ubyte()).toBe(0);
   });
 
-  test("should string", () => {
-    expect(mbuffer.string()).toBe("");
+  test('should string', () => {
+    expect(mbuffer.string()).toBe('');
   });
 
-  test("should short", () => {
+  test('should short', () => {
     expect(mbuffer.short()).toBe(0);
   });
 
-  test("should ushort", () => {
+  test('should ushort', () => {
     expect(mbuffer.ushort()).toBe(0);
   });
 
-  test("should byte", () => {
+  test('should byte', () => {
     expect(mbuffer.byte()).toBe(0);
   });
 
-  test("should uint", () => {
+  test('should uint', () => {
     expect(mbuffer.uint()).toBe(0);
   });
 
-  test("should int", () => {
+  test('should int', () => {
     expect(mbuffer.int()).toBe(0);
   });
 
-  test("should ulong", () => {
+  test('should ulong', () => {
     expect(mbuffer.ulong()).toBeUndefined();
   });
-  test("should adress", () => {
+  test('should adress', () => {
     expect(mbuffer.address()).toBeUndefined();
   });
 
-  test("should long", () => {
+  test('should long', () => {
     expect(mbuffer.long()).toBeUndefined();
   });
 });
