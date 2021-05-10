@@ -5,7 +5,7 @@ let handling;
 describe('VehicleHandling', () => {
   beforeEach(() => {
     handling = new VehicleHandling();
-  })
+  });
   test('should have properties', () => {
     expect(handling.handlingNameHash).toBe(0);
     expect(handling.acceleration).toBe(0);
@@ -73,13 +73,13 @@ describe('VehicleHandling', () => {
     expect(handling.unkFloat4).toBe(0);
     expect(handling.unkFloat5).toBe(0);
     expect(handling.weaponDamageMult).toBe(0);
-  })
+  });
 
   test('should isModified', () => {
     expect(handling.isModified()).toBe(false);
-  })
-  
+  });
+
   test('should reset', () => {
     expect(handling.reset()).toBeUndefined();
-  })
-})
+  });
+});

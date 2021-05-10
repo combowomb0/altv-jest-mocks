@@ -1,10 +1,9 @@
-const { HandlingData, Vector3 } = require("../../lib/mocks/alt-client");
-
+const { HandlingData, Vector3 } = require('../../lib/mocks/alt-client');
 
 describe('HandlingData', () => {
-  beforeEach(() =>{
+  beforeEach(() => {
     handling = new HandlingData();
-  })
+  });
 
   test('should have properties', () => {
     expect(handling.brakeForce).toBe(0);
@@ -73,13 +72,13 @@ describe('HandlingData', () => {
     expect(handling.tractionCurveMin).toBe(0);
     expect(handling.antiRollBarForce).toBe(0);
     expect(handling.monetaryValue).toBe(0);
-  })
-  
+  });
+
   test('should getForModelName', () => {
     expect(handling.getForModelName()).toBeInstanceOf(HandlingData);
-  })
-  
+  });
+
   test('should getForHandlingName', () => {
     expect(handling.getForHandlingName()).toBeInstanceOf(HandlingData);
-  })
-})
+  });
+});
