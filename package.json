@@ -23,7 +23,10 @@
   ],
   "scripts": {
     "test": "jest --colors --verbose",
-    "prettier": "prettier --write {__tests__,lib}/**/*.{js,ts}"
+    "prettier": "prettier {__tests__,lib}/**/*.{js,ts} --list-different",
+    "prettier:write": "yarn prettier --write",
+    "preversion": "yarn prettier",
+    "postversion": "git push --tags && npm publish && git push"
   },
   "jest": {
     "moduleNameMapper": {
